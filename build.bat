@@ -1,0 +1,1 @@
+nuget pack  Daven.SyntaxExtensions/Daven.SyntaxExtensions.csproj
