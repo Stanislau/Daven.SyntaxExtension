@@ -5,7 +5,7 @@ namespace Daven.SyntaxExtensions
     public static class Are
     {
         /// <summary>
-        /// Check that items are not null 12345.
+        /// Check that items are not null.
         /// </summary>
         public static bool NotNull(params object[] items)
         {
