@@ -2,6 +2,9 @@ using System.Linq;
 
 namespace Daven.SyntaxExtensions
 {
+    /// <summary>
+    /// 123
+    /// </summary>
     public static class Are
     {
         /// <summary>
