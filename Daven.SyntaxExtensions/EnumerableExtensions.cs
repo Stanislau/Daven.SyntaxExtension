@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace Daven.SyntaxExtensions
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class EnumerableExtensions
     {
         public static T MaxFirstItem<T>(this IEnumerable<T> items, Func<T, int> getProperty, out int maxDamage)
