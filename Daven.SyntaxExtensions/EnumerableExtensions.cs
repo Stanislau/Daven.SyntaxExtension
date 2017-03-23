@@ -10,22 +10,22 @@ namespace Daven.SyntaxExtensions
     /// </summary>
     public static class EnumerableExtensions
     {
-        public static T MaxFirstItem<T>(this IEnumerable<T> items, Func<T, int> getProperty, out int maxDamage)
+        public static T MaxFirstItem<T>(this IEnumerable<T> items, Func<T, int> getProperty, out int propertyValue)
         {
             if (items.Any() == false)
             {
-                maxDamage = 0;
+                propertyValue = 0;
                 return default(T);
             }
 
-            maxDamage = getProperty(items.First());
+            propertyValue = getProperty(items.First());
             T maxItem = items.First();
             foreach (var item in items)
             {
                 var itemInt = getProperty(item);
-                if (maxDamage < itemInt)
+                if (propertyValue < itemInt)
                 {
-                    maxDamage = itemInt;
+                    propertyValue = itemInt;
                     maxItem = item;
                 }
             }
