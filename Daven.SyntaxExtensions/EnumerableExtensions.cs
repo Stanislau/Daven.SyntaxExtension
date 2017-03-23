@@ -6,7 +6,7 @@ using System.Linq;
 namespace Daven.SyntaxExtensions
 {
     /// <summary>
-    /// 123123234sdkfjfkd
+    /// 123123234sdkfjfkdsdfe
     /// </summary>
     public static class EnumerableExtensions
     {
